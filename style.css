@@ -6,13 +6,15 @@
 *****************************************/
 :root {
   /* Colores */
-  --primario: #ffffff;
-  --secundario: #000000;
+  --primario: #000000;
+  --secundario: #71ff5e;
+  --terceario: #fff066;
+  --cuaternario: #ac85ff;
+
   /* Tipografía */
   --font-family-body: serif;
   --font-family-headings: sans-serif;
 }
-
 /****************************************
 *    Base
 *****************************************/
@@ -21,35 +23,27 @@ html {
 }
 
 body {
-  font-family: var(--font-family-body);
-}
-
-h1,
-h2,
-h3,
-h4,
-h5 {
-  font-family: var(--font-family-headings);
+  font-family: "Montserrat", sans-serif;
+  background-color: #f7f4d8;
 }
 
 h1 {
-  font-size: 40px;
+  font-size: 24px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
 }
 
 h2 {
-  font-size: 33px;
+  font-size: 22px;
+  font-family: "Tajawal", sans-serif;
+  color: var(--cuaternario);
 }
 
 h3 {
-  font-size: 27px;
-}
-
-h4 {
-  font-size: 24px;
-}
-
-h5 {
-  font-size: 19px;
+  font-size: 64px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  color: var(--secundario);
 }
 
 /****************************************
