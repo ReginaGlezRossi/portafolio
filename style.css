@@ -31,107 +31,35 @@
 *    Base
 *****************************************/
 html {
-  height: 100%;
+  html {
+    box-sizing: border-box;
+    height: 100%;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
 }
 
 body {
   font-family: "Montserrat", sans-serif;
-
-  background: rgba(235, 233, 249, 1);
-  background: -moz-linear-gradient(
-    left,
-    rgba(235, 233, 249, 1) 0%,
-    rgba(255, 240, 102, 1) 0%,
-    rgba(113, 255, 94, 1) 51%,
-    rgba(172, 133, 255, 1) 100%
-  );
-  background: -webkit-gradient(
-    left top,
-    right top,
-    color-stop(0%, rgba(235, 233, 249, 1)),
-    color-stop(0%, rgba(255, 240, 102, 1)),
-    color-stop(51%, rgba(113, 255, 94, 1)),
-    color-stop(100%, rgba(172, 133, 255, 1))
-  );
-  background: -webkit-linear-gradient(
-    left,
-    rgba(235, 233, 249, 1) 0%,
-    rgba(255, 240, 102, 1) 0%,
-    rgba(113, 255, 94, 1) 51%,
-    rgba(172, 133, 255, 1) 100%
-  );
-  background: -o-linear-gradient(
-    left,
-    rgba(235, 233, 249, 1) 0%,
-    rgba(255, 240, 102, 1) 0%,
-    rgba(113, 255, 94, 1) 51%,
-    rgba(172, 133, 255, 1) 100%
-  );
-  background: -ms-linear-gradient(
-    left,
-    rgba(235, 233, 249, 1) 0%,
-    rgba(255, 240, 102, 1) 0%,
-    rgba(113, 255, 94, 1) 51%,
-    rgba(172, 133, 255, 1) 100%
-  );
-  background: linear-gradient(
-    to right,
-    rgba(235, 233, 249, 1) 0%,
-    rgba(255, 240, 102, 1) 0%,
-    rgba(113, 255, 94, 1) 51%,
-    rgba(172, 133, 255, 1) 100%
-  );
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ebe9f9', endColorstr='#ac85ff', GradientType=1 );
-}
-
-body {
-  font-size: 18px;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
-  color: var(--primario);
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 11fr;
 }
 
 h1 {
-  font-size: 24px;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
-  color: var(--secundario);
-}
-
-.negro {
-  color: #000000;
-}
-
-.verde {
-  color: #71ff5e;
-}
-
-h2 {
-  font-size: 22px;
+  font-size: 18px;
   font-family: "Tajawal", sans-serif;
-  font-weight: 400;
-  color: var(--cuaternario);
+  font-weight: 500;
 }
 
 h3 {
-  font-size: 48px;
+  font-size: 30px;
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
-  color: var(--terceario);
-}
-
-.caja {
-  display: flex;
-}
-
-.caja > * {
-  outline: rgba(113, 255, 94, 1) dotted 2px;
-  flex-direction: column;
-  flex: 1;
-  padding: 20px;
-}
-.caja h2 {
-  font-size: 30px;
 }
 
 /****************************************
@@ -143,9 +71,25 @@ h3 {
 *    Componentes
 *****************************************/
 
+h1 {
+  transform: rotate(270deg);
+  margin: 10px 0px 70px -10px;
+  padding: 0 30px 0px 0;
+}
+
+li {
+  display: block; /* para quitar puntitos de la lista*/
+  color: #000000;
+  margin: 10px 0px 80px -40px;
+  transform: rotate(270deg);
+}
+
+li a {
+  color: #000000;
+  text-decoration: none;
+  padding: 0 30px 0px 0;
+}
+
 /****************************************
 *    Helpers
 *****************************************/
-[dots] {
-  outline: rgba(172, 133, 255, 1);
-}
