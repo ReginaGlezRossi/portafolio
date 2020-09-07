@@ -30,24 +30,45 @@
 /****************************************
 *    Base
 *****************************************/
+/*
 html {
-  html {
-    box-sizing: border-box;
-    height: 100%;
-  }
-  *,
-  *:before,
-  *:after {
-    box-sizing: inherit;
-  }
-}
+  box-sizing: border-box;
+  /*height: 100%;*/
+/*
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}*/
 
 body {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-column-gap: 8px;
   font-family: "Montserrat", sans-serif;
   margin: 0;
   padding: 0;
+}
+
+.header {
+  grid-column-start: 1;
+}
+
+.main-card {
+  grid-column-start: 3;
+  grid-column-end: 12;
   display: grid;
-  grid-template-columns: 1fr 11fr;
+  grid-template-columns: 4fr 1fr 4fr;
+  grid-column-gap: 8px;
+}
+
+.texto_card {
+  display: flex;
+  justify-content: space-between;
+}
+
+.img_card {
+  width: 250%;
 }
 
 h1 {
@@ -70,6 +91,25 @@ h3 {
 /****************************************
 *    Componentes
 *****************************************/
+nav {
+  height: 100vh; /*   viewer height -> 100% de la pantalla de quien vea esto */
+}
+
+h1:hover {
+  background-color: #000000;
+}
+
+nav:hover {
+  background-color: #000000;
+}
+
+nav:hover {
+  color: #fff;
+}
+
+h1:hover {
+  color: #fff;
+}
 
 h1 {
   transform: rotate(270deg);
@@ -88,6 +128,10 @@ li a {
   color: #000000;
   text-decoration: none;
   padding: 0 30px 0px 0;
+}
+
+a:hover {
+  color: #fff;
 }
 
 /****************************************
