@@ -24,28 +24,23 @@
   --cuaternario4: #e4dbfa;
 
   /* Tipografía */
-  --font-family-body: serif;
-  --font-family-headings: sans-serif;
+  --font-family: "Montserrat", sans-serif;
+  --font-family-headings: "Tajawal";
 }
 /****************************************
 *    Base
 *****************************************/
-/*
-html {
-  box-sizing: border-box;
-  /*height: 100%;*/
-/*
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
-}*/
-
 body {
+  font-family: var(--font-family);
+}
+
+/****************************************
+*    Componentes
+*****************************************/
+.home {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-column-gap: 8px;
-  font-family: "Montserrat", sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -60,14 +55,15 @@ body {
   display: grid;
   grid-template-columns: 4fr 1fr 4fr;
   grid-column-gap: 8px;
+  padding-top: 48px;
 }
 
-.texto_card {
+.card__descripcion {
   display: flex;
   justify-content: space-between;
 }
 
-.img_card {
+.card__imagen-img {
   width: 250%;
 }
 
@@ -135,5 +131,13 @@ a:hover {
 }
 
 /****************************************
-*    Helpers
+*    TODO Acomodar 
 *****************************************/
+.menu {
+  background: white;
+  transition: all 1s ease-in-out;
+}
+
+.menu:hover {
+  background: #000000;
+}
