@@ -46,6 +46,8 @@ body {
 }
 
 .header {
+  background: black;
+  color: white;
   grid-column-start: 1;
 }
 
@@ -87,10 +89,11 @@ h3 {
 /****************************************
 *    Componentes
 *****************************************/
-nav {
+.nav {
   height: 100vh; /*   viewer height -> 100% de la pantalla de quien vea esto */
+  color: white;
 }
-
+/*
 h1:hover {
   background-color: #000000;
 }
@@ -98,14 +101,7 @@ h1:hover {
 nav:hover {
   background-color: #000000;
 }
-
-nav:hover {
-  color: #fff;
-}
-
-h1:hover {
-  color: #fff;
-}
+*/
 
 h1 {
   transform: rotate(270deg);
@@ -115,29 +111,34 @@ h1 {
 
 li {
   display: block; /* para quitar puntitos de la lista*/
-  color: #000000;
+
   margin: 10px 0px 80px -40px;
   transform: rotate(270deg);
 }
 
+li:nth-child(2) {
+  margin-top: -30px;
+}
+
 li a {
-  color: #000000;
+  color: white;
   text-decoration: none;
   padding: 0 30px 0px 0;
 }
 
-a:hover {
+/* a:hover {
   color: #fff;
-}
+} */
 
 /****************************************
 *    TODO Acomodar 
 *****************************************/
 .menu {
-  background: white;
   transition: all 1s ease-in-out;
 }
 
+/*
 .menu:hover {
   background: #000000;
 }
+*/
