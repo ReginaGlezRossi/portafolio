@@ -10,129 +10,124 @@
     />
     <link rel="stylesheet" href="style.css" />
   </head>
-
-  <body class="home">
+  <body class="layout">
+    <!-- MENU -->
     <header class="header" role="banner">
       <div class="header__nombre">
-        <!-- header__nombre -->
-        <h1>regina — <br />g rossi</h1>
+        <h1>regina - g rossi</h1>
       </div>
-      <nav class="nav" role="navigation">
-        <!-- nav -->
+      <nav class="header__nav" role="navigation">
         <ul class="menu">
-          <!-- menu -->
           <li class="menu__item">
-            <!-- menu__item -->
             <a href="#" class="menu__link">
-              <!-- menu__link -->
               <svg
-                width="22"
-                height="17"
-                style="transform: rotate(90deg);"
+                class="menu__link-svg"
                 viewBox="0 0 23 23"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
                   d="M1 22L22 0.999999M22 0.999999L22 12.6264M22 0.999999L11.1921 1"
-                  stroke="black"
+                  stroke="white"
                   stroke-width="2"
                 />
               </svg>
             </a>
           </li>
-          <li class="texto-menu"><a class="menu__link" href="#">Work </a></li>
-          <li class="texto-menu"><a href="#">Contact </a></li>
-          <li class="texto-menu"><a href="#">About </a></li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Work </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Contact </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">About </a>
+          </li>
         </ul>
       </nav>
     </header>
-
-    <main class="main-card">
-      <!-- main -->
-      <div class="card">
-        <!-- card -->
-        <div class="card__descripcion">
-          <!-- card__descripcion -->
-          <span class="card__descripcion-titulo">Robert Ashley</span>
-          <!-- h2 card__descripcion-titulo -->
-          <span class="card__descripcion-categoria">carteles</span>
-          <!-- p card__descripcion-categoria -->
-          <!-- <p class="card__descripcion-categoria">carteles</p>-->
-        </div>
-        <div class="card__imagen">
-          <!-- card__imagen -->
-          <img class="card__imagen-img" src="./assets/dust-mockup.jpg" alt="" />
-          <!-- card__imagen-img -->
-        </div>
-        <span class="card__imagen-date">2019</span>
-        <!-- p card__imagen-date -->
-      </div>
-
-      <!-- Vacio-->
-      <div class="card"></div>
-      <!-- Vacio-->
-
-      <div class="card">
-        <!-- card -->
-        <div class="card__descripcion">
-          <!-- card__descripcion -->
-          <span class="card__descripcion-titulo">Robert Ashley</span>
-          <!-- h2 card__descripcion-titulo -->
-          <span class="card__descripcion-categoria">carteles</span>
-          <!-- p card__descripcion-categoria -->
-          <!-- <p class="card__descripcion-categoria">carteles</p>-->
-        </div>
-        <div class="card__imagen">
-          <!-- card__imagen -->
-          <img class="card__imagen-img" src="./assets/dust-mockup.jpg" alt="" />
-          <!-- card__imagen-img -->
-        </div>
-        <span class="card__imagen-date">2019</span>
-        <!-- p card__imagen-date -->
-      </div>
-
-      <div class="card">
-        <!-- card -->
-        <div class="card__descripcion">
-          <!-- card__descripcion -->
-          <span class="card__descripcion-titulo">Robert Ashley</span>
-          <!-- h2 card__descripcion-titulo -->
-          <span class="card__descripcion-categoria">carteles</span>
-          <!-- p card__descripcion-categoria -->
-          <!-- <p class="card__descripcion-categoria">carteles</p>-->
-        </div>
-        <div class="card__imagen">
-          <!-- card__imagen -->
-          <img class="card__imagen-img" src="./assets/dust-mockup.jpg" alt="" />
-          <!-- card__imagen-img -->
-        </div>
-        <span class="card__imagen-date">2019</span>
-        <!-- p card__imagen-date -->
-      </div>
-
-      <!-- Vacio-->
-      <div class="card"></div>
-      <!-- Vacio-->
-
-      <div class="card">
-        <!-- card -->
-        <div class="card__descripcion">
-          <!-- card__descripcion -->
-          <span class="card__descripcion-titulo">Robert Ashley</span>
-          <!-- h2 card__descripcion-titulo -->
-          <span class="card__descripcion-categoria">carteles</span>
-          <!-- p card__descripcion-categoria -->
-          <!-- <p class="card__descripcion-categoria">carteles</p>-->
-        </div>
-        <div class="card__imagen">
-          <!-- card__imagen -->
-          <img class="card__imagen-img" src="./assets/dust-mockup.jpg" alt="" />
-          <!-- card__imagen-img -->
-        </div>
-        <span class="card__imagen-date">2019</span>
-        <!-- p card__imagen-date -->
-      </div>
+    <!-- FIN MENU -->
+    <main class="main">
+      <article class="proyecto">
+        <header class="proyecto__header">
+          <h2 class="proyecto__titulo">Robert Ashley</h2>
+          <p class="proyecto__categoria">carteles</p>
+        </header>
+        <figure class="proyecto__imagen">
+          <picture>
+            <source
+              media="(min-width: 600px)"
+              srcset="./assets/imagenes/mockup.jpg"
+            />
+            <img src="./assets/imagenes/mockup_sm.jpg" alt="Mockup" />
+          </picture>
+        </figure>
+        <time class="proyecto__date">2019</time>
+      </article>
+      <article class="proyecto">
+        <header class="proyecto__header">
+          <h2 class="proyecto__titulo">Suculentas</h2>
+          <p class="proyecto__categoria">editorial</p>
+        </header>
+        <figure class="proyecto__imagen">
+          <picture>
+            <source
+              media="(min-width: 600px)"
+              srcset="./assets/imagenes/mockup.jpg"
+            />
+            <img src="./assets/imagenes/mockup_sm.jpg" alt="Mockup" />
+          </picture>
+        </figure>
+        <time class="proyecto__date">2020</time>
+      </article>
+      <article class="proyecto">
+        <header class="proyecto__header">
+          <h2 class="proyecto__titulo">Arado</h2>
+          <span class="proyecto__categoria">branding</span>
+        </header>
+        <figure class="proyecto__imagen">
+          <picture>
+            <source
+              media="(min-width: 600px)"
+              srcset="./assets/imagenes/mockup.jpg"
+            />
+            <img src="./assets/imagenes/mockup_sm.jpg" alt="Mockup" />
+          </picture>
+        </figure>
+        <time class="proyecto__date">2019</time>
+      </article>
+      <article class="proyecto">
+        <header class="proyecto__header">
+          <h2 class="proyecto__titulo">Riso</h2>
+          <p class="proyecto__categoria">editorial</p>
+        </header>
+        <figure class="proyecto__imagen">
+          <picture>
+            <source
+              media="(min-width: 600px)"
+              srcset="./assets/imagenes/mockup.jpg"
+            />
+            <img src="./assets/imagenes/mockup_sm.jpg" alt="Mockup" />
+          </picture>
+        </figure>
+        <time class="proyecto__date">2019</time>
+      </article>
+      <article class="proyecto">
+        <header class="proyecto__header">
+          <h2 class="proyecto__titulo">Riso</h2>
+          <p class="proyecto__categoria">editorial</p>
+        </header>
+        <figure class="proyecto__imagen">
+          <picture>
+            <source
+              media="(min-width: 600px)"
+              srcset="./assets/imagenes/mockup.jpg"
+            />
+            <img src="./assets/imagenes/mockup_sm.jpg" alt="Mockup" />
+          </picture>
+        </figure>
+        <time class="proyecto__date">2019</time>
+      </article>
     </main>
   </body>
 </html>
