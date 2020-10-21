@@ -74,6 +74,7 @@ a:hover {
 *    Componentes
 *****************************************/
 .layout {
+  position: relative;
   display: flex;
 }
 
@@ -181,8 +182,29 @@ picture > img {
 }
 
 /* Contacto */
-.menu-contacto {
+
+.layout {
+  position: relative;
 }
 
-.menu-contacto--item {
+.menu-contacto {
+  position: absolute;
+  bottom: 0;
+  padding: 3rem;
+}
+
+.menu-contacto__item {
+  padding: 0 40px;
+}
+
+.menu-contacto__item > * {
+  color: white;
+  font-size: 40px;
+}
+
+.texto_contacto {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  color: white;
 }
