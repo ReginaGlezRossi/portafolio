@@ -208,3 +208,8 @@ picture > img {
   right: 20px;
   color: white;
 }
+
+/* Proyecto individual */
+.proyecto-individual {
+  display: flex;
+}
