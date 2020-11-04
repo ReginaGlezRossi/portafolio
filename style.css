@@ -212,4 +212,29 @@ picture > img {
 /* Proyecto individual */
 .proyecto-individual {
   display: flex;
+  gap: 80px;
+  width: 100vw;
+}
+
+.info-proyectos {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+  width: 100%;
+}
+
+.info-proyectos h2 {
+  font-size: 30px;
+  font-family: var(--font-family);
+}
+
+.imagenes-proyecto {
+  border: 1px solid black;
+  width: 80vw;
+  margin: auto;
+}
+.imagenes-proyecto img {
+  margin: auto;
+}
+.imagenes-proyecto figure {
 }
