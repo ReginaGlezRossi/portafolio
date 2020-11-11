@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portafolio-Regina</title>
+    <title>Sobre mí</title>
     <link
       rel="stylesheet"
       href="https://unpkg.com/modern-css-reset/dist/reset.min.css"
@@ -11,6 +11,14 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body class="layout">
+    <div class="about">
+      <p>
+        Hola, soy Regina. Soy una diseñadora que trabaja como freelance. Con mis
+        métodos creativos me gusta provocar un impacto. Juntos podemos llegar a
+        hacer grandes cosas. ¡No dudes en contactarme!
+      </p>
+      <a href="mailto:reginagr98@gmail.com">reginagr98@gmail.com</a>
+    </div>
     <!-- MENU -->
     <header class="header" role="banner">
       <div class="header__nombre">
@@ -35,13 +43,13 @@
             </a>
           </li>
           <li class="menu__item">
-            <a class="menu__link" href="/">Work </a>
+            <a class="menu__link" href="#">Work </a>
           </li>
           <li class="menu__item">
             <a class="menu__link" href="contacto.html">Contact </a>
           </li>
           <li class="menu__item">
-            <a class="menu__link" href="about.html">About </a>
+            <a class="menu__link" href="#">About </a>
           </li>
         </ul>
       </nav>
@@ -54,18 +62,13 @@
           <p class="proyecto__categoria">carteles</p>
         </header>
         <figure class="proyecto__imagen">
-          <!-- en anchor a tag es el wrapper de la etiqueta picture -->
-          <a href="./proyectos/robert-ashley.html">
-            <!-- aqui empieza -->
-            <picture>
-              <source
-                media="(min-width: 600px)"
-                srcset="./assets/imagenes/mockup.jpg"
-              />
-              <img src="./assets/imagenes/mockup_sm.jpg" alt="Mockup" />
-            </picture>
-          </a>
-          <!-- aqui termina -->
+          <picture>
+            <source
+              media="(min-width: 600px)"
+              srcset="./assets/imagenes/mockup.jpg"
+            />
+            <img src="./assets/imagenes/mockup_sm.jpg" alt="Mockup" />
+          </picture>
         </figure>
         <time class="proyecto__date">2019</time>
       </article>
