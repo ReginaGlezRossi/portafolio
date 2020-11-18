@@ -109,7 +109,7 @@ a:hover {
 }
 
 .menu {
-  display: inline-block;
+  /* display: inline-block; */
   height: 100%;
 }
 
@@ -123,6 +123,7 @@ a:hover {
 
 .menu__item:not(:nth-child(2)) {
   margin-top: 4rem;
+  border: 1px solid blue;
 }
 
 .menu__link {
@@ -133,6 +134,7 @@ a:hover {
   max-width: 22px;
   max-height: 17px;
   margin-bottom: -6px;
+  margin-top: -4rem;
   transform: rotate(90deg);
 }
 
