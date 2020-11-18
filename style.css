@@ -229,7 +229,7 @@ picture > img {
 }
 
 .imagenes-proyecto {
-  border: 1px solid black;
+  border: none;
   width: 80vw;
   margin: auto;
 }
