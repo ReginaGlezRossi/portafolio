@@ -253,7 +253,21 @@ picture > img {
   left: 71px;
   top: 0;
   background: #ffffff;
+  animation: aboutanimacion 1000ms cubic-bezier(0.4, 0, 1, 1) 100ms 1 normal
+    both running;
 }
+
+@keyframes aboutanimacion {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
 .about p {
   font-size: 25px;
   color: var(--secundario);
