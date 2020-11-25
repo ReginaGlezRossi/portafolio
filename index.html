@@ -10,6 +10,7 @@
     />
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body class="layout">
     <!-- MENU -->
     <header class="header" role="banner">
@@ -17,31 +18,18 @@
         <h1>regina - g rossi</h1>
       </div>
       <nav class="header__nav" role="navigation">
-        <ul class="menu">
-          <li class="menu__item">
-            <a href="#" class="menu__link">
-              <svg
-                class="menu__link-svg"
-                viewBox="0 0 23 23"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M1 22L22 0.999999M22 0.999999L22 12.6264M22 0.999999L11.1921 1"
-                  stroke="white"
-                  stroke-width="2"
-                />
-              </svg>
-            </a>
+        <ul class="menu" role="list">
+          <li>
+            <img src="./assets/flecha.svg" alt="flecha" />
           </li>
-          <li class="menu__item">
-            <a class="menu__link" href="/">Work </a>
+          <li>
+            <a href="/">Work</a>
           </li>
-          <li class="menu__item">
-            <a class="menu__link" href="contacto.html">Contact </a>
+          <li>
+            <a href="contacto.html">Contact</a>
           </li>
-          <li class="menu__item">
-            <a class="menu__link" href="about.html">About </a>
+          <li>
+            <a href="about.html">About</a>
           </li>
         </ul>
       </nav>
@@ -50,8 +38,8 @@
     <main class="main">
       <article class="proyecto">
         <header class="proyecto__header">
-          <h2 class="proyecto__titulo">VINYL</h2>
-          <p class="proyecto__categoria">ilustración</p>
+          <h2 class="proyecto__titulo">Vinyl</h2>
+          <p class="proyecto__categoria">identidad</p>
         </header>
         <figure class="proyecto__imagen">
           <!-- en anchor a tag es el wrapper de la etiqueta picture -->
@@ -76,20 +64,20 @@
       </article>
       <article class="proyecto">
         <header class="proyecto__header">
-          <h2 class="proyecto__titulo">MANUAL</h2>
+          <h2 class="proyecto__titulo">Modigliani</h2>
           <p class="proyecto__categoria">editorial</p>
         </header>
         <figure class="proyecto__imagen">
-          <a href="./proyectos/manual.html">
+          <a href="./proyectos/modigliani.html">
             <picture>
               <source
                 media="(min-width: 600px)"
                 srcset="
-                  https://res.cloudinary.com/dzfxmnkm3/image/upload/v1606324840/web/Copia_de_manual_tipo_mockup1_ygymdl.jpg
+                  https://res.cloudinary.com/dzfxmnkm3/image/upload/v1605106427/web/MODIGLIANI_M1_ye78my.jpg
                 "
               />
               <img
-                src="https://res.cloudinary.com/dzfxmnkm3/image/upload/v1606324840/web/Copia_de_manual_tipo_mockup1_ygymdl.jpg"
+                src="https://res.cloudinary.com/dzfxmnkm3/image/upload/v1605106427/web/MODIGLIANI_M1_ye78my.jpg"
                 alt="Mockup"
               />
             </picture>
@@ -99,87 +87,51 @@
       </article>
       <article class="proyecto">
         <header class="proyecto__header">
-          <h2 class="proyecto__titulo">PORTADAS</h2>
-          <span class="proyecto__categoria">ilustración</span>
+          <h2 class="proyecto__titulo">Arado</h2>
+          <span class="proyecto__categoria">branding</span>
         </header>
         <figure class="proyecto__imagen">
           <picture>
             <source
               media="(min-width: 600px)"
-              srcset="
-                https://res.cloudinary.com/dzfxmnkm3/image/upload/v1606324237/web/JANE_EYRE_jqa87p.jpg
-              "
+              srcset="./assets/imagenes/mockup.jpg"
             />
-            <img
-              src="https://res.cloudinary.com/dzfxmnkm3/image/upload/v1606324237/web/JANE_EYRE_jqa87p.jpg"
-              alt="Mockup"
-            />
-          </picture>
-        </figure>
-        <time class="proyecto__date">2020</time>
-      </article>
-      <article class="proyecto">
-        <header class="proyecto__header">
-          <h2 class="proyecto__titulo">RISO</h2>
-          <p class="proyecto__categoria">composiciones</p>
-        </header>
-        <figure class="proyecto__imagen">
-          <picture>
-            <source
-              media="(min-width: 600px)"
-              srcset="
-                https://res.cloudinary.com/dzfxmnkm3/image/upload/v1606325896/web/Escanear_6_cwca1h.jpg
-              "
-            />
-            <img
-              src="https://res.cloudinary.com/dzfxmnkm3/image/upload/v1606325896/web/Escanear_6_cwca1h.jpg"
-              alt="Mockup"
-            />
+            <img src="./assets/imagenes/mockup_sm.jpg" alt="Mockup" />
           </picture>
         </figure>
         <time class="proyecto__date">2019</time>
       </article>
       <article class="proyecto">
         <header class="proyecto__header">
-          <h2 class="proyecto__titulo">MODIGLIANI</h2>
+          <h2 class="proyecto__titulo">Riso</h2>
           <p class="proyecto__categoria">editorial</p>
         </header>
         <figure class="proyecto__imagen">
           <picture>
             <source
               media="(min-width: 600px)"
-              srcset="
-                https://res.cloudinary.com/dzfxmnkm3/image/upload/v1605106427/web/MODIGLIANI_3_pp1ja5.jpg
-              "
+              srcset="./assets/imagenes/mockup.jpg"
             />
-            <img
-              src="https://res.cloudinary.com/dzfxmnkm3/image/upload/v1606324840/web/Copia_de_manual_tipo_mockup1_ygymdl.jpg"
-              alt="Mockup"
-            />
+            <img src="./assets/imagenes/mockup_sm.jpg" alt="Mockup" />
           </picture>
         </figure>
-        <time class="proyecto__date">2020</time>
+        <time class="proyecto__date">2019</time>
       </article>
       <article class="proyecto">
         <header class="proyecto__header">
-          <h2 class="proyecto__titulo">WINGS OVER THE WORLD</h2>
+          <h2 class="proyecto__titulo">Riso</h2>
           <p class="proyecto__categoria">editorial</p>
         </header>
         <figure class="proyecto__imagen">
           <picture>
             <source
               media="(min-width: 600px)"
-              srcset="
-                https://res.cloudinary.com/dzfxmnkm3/image/upload/v1606327812/web/INDIA_WOW_sd1gdv.jpg
-              "
+              srcset="./assets/imagenes/mockup.jpg"
             />
-            <img
-              src="https://res.cloudinary.com/dzfxmnkm3/image/upload/v1606327812/web/INDIA_WOW_sd1gdv.jpg"
-              alt="Mockup"
-            />
+            <img src="./assets/imagenes/mockup_sm.jpg" alt="Mockup" />
           </picture>
         </figure>
-        <time class="proyecto__date">2020</time>
+        <time class="proyecto__date">2019</time>
       </article>
     </main>
   </body>
