@@ -134,7 +134,7 @@ ul li {
   flex: 1;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-  width: min(1100px, 86%);
+  width: min(1000px, 86%);
   grid-row-gap: 60px;
   place-items: center;
   margin: 0 auto;
@@ -164,7 +164,7 @@ ul li {
 }
 
 picture > img {
-  max-width: 450px;
+  max-width: 440px;
 }
 
 .proyecto__date {
@@ -202,7 +202,6 @@ picture > img {
   gap: 80px;
   width: 100vw;
   height: auto;
-  padding-bottom: 100px;
 }
 
 .info-proyectos {
@@ -213,21 +212,27 @@ picture > img {
 }
 
 .info-proyectos h2 {
-  font-size: 30px;
+  font-size: 35px;
   font-family: var(--font-family);
 }
 
 .imagenes-proyecto {
   border: none;
-  width: 80vw;
+  width: 80%;
   margin: auto;
+  margin-bottom: 3rem;
 }
+
+.imagenes-proyecto:last-of-type {
+  margin-bottom: 6rem;
+}
+
 .imagenes-proyecto img {
   margin: auto;
 }
-.imagenes-proyecto > * {
+/* .imagenes-proyecto > * {
   margin: 20px 0;
-}
+} */
 
 .imagenes-proyecto figcaption {
   /* color: blue; */
@@ -244,7 +249,24 @@ picture > img {
 }
 
 .proyecto-individual button {
-  all: unset;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  cursor: pointer;
+  transition: var(--transicion);
+}
+
+.proyecto-individual button:focus {
+  outline: none;
+  outline-offset: none;
+}
+
+.proyecto-individual button:hover {
+  opacity: 0.7;
+}
+
+.proyecto-individual button + button {
+  margin-left: 6rem;
 }
 
 /* About */
