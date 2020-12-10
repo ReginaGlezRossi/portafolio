@@ -13,6 +13,14 @@
 
   <body class="layout">
     <!-- MENU -->
+    <div class="about" hidden>
+      <p>
+        Hola, soy Regina. Soy una diseñadora que trabaja como freelance. Con mis
+        métodos creativos me gusta provocar un impacto. Juntos podemos llegar a
+        hacer grandes cosas. ¡No dudes en contactarme!
+      </p>
+      <a href="mailto:reginagr98@gmail.com">reginagr98@gmail.com</a>
+    </div>
     <header class="header" role="banner">
       <div class="header__nombre">
         <h1>regina - <br />g rossi</h1>
@@ -29,7 +37,7 @@
             <a href="contacto.html">Contact</a>
           </li>
           <li>
-            <a href="about.html">About</a>
+            <a href="#" class="about-info">About</a>
           </li>
         </ul>
       </nav>
@@ -133,16 +141,16 @@
       </article>
       <article class="proyecto">
         <header class="proyecto__header">
-          <h2 class="proyecto__titulo">RISO</h2>
-          <p class="proyecto__categoria">abstracción</p>
+          <h2 class="proyecto__titulo">LIMO</h2>
+          <p class="proyecto__categoria">identidad</p>
         </header>
         <figure class="proyecto__imagen">
-          <a href="./proyectos/riso.html">
+          <a href="./proyectos/limo.html">
             <picture>
               <source
                 media="(min-width: 600px)"
                 srcset="
-                  https://res.cloudinary.com/dzfxmnkm3/image/upload/v1606325896/web/Escanear_6_cwca1h.jpg
+                  https://res.cloudinary.com/dzfxmnkm3/image/upload/v1607635504/web/LIMONCELLO19_ecgzep.jpg
                 "
               />
               <img
@@ -152,7 +160,7 @@
             </picture>
           </a>
         </figure>
-        <time class="proyecto__date">2019</time>
+        <time class="proyecto__date">2020</time>
       </article>
       <article class="proyecto">
         <header class="proyecto__header">
@@ -178,5 +186,6 @@
         <time class="proyecto__date">2020</time>
       </article>
     </main>
+    <script src="./js/main.js"></script>
   </body>
 </html>
